@@ -1,34 +1,47 @@
-# Adjuvant
+# Projekt Adjuvant
 
-## Kurzbeschreibung
-Ein einfach zu verwendendes, cloud-basiertes Modul für den Sprachassistenten "Amazon Alexa" zur Unterstützung von Alzheimerpatienten bei der Einhaltung von Terminen.
+[![GitHub issues](https://img.shields.io/github/issues/projekt-adjuvant/adjuvant)](https://github.com/projekt-adjuvant/adjuvant/issues)
+[![GitHub license](https://img.shields.io/github/license/projekt-adjuvant/adjuvant)](https://github.com/projekt-adjuvant/adjuvant)
 
-Das System läuft auf der Platform "Amazon Alexa" und speichert anstehende Termine des Patienten zur frühzeitigen späteren Erinnerung in der Cloud. Effiziente Routen zum gewünschten Standort werden mit Hilfe der [GeoCode Routing API](https://geocode.dev.stefan.zone) berechnet und an die in Alexa hinterlegte EMail Adresse gesendet.
-Unter anderem kann man auch eigene Termine einer Kontakperson senden. Dies erfolgt ebenso per E-Mail, wobei die E-Mail Adresse der Kontaktperson mithilfe der Buchstabiertafel in DynamoDB abgespeichert wird.
+Ein Amazon Alexa Plugin zur Unterstützung von Patienten mit Alzheimer bei der Einhaltung von Terminen und der Berechnung von Routen.
+
+## Inhalte
+
+- [**Beschreibung**](#-beschreibung)
+- [**Konfiguration**](#-konfiguration)
+- [**Technologie**](#-technologie)
+- [**Fehler gefunden?**](#-fehler-gefunden)
+- [**Urheberrecht**](#urheberrecht)
+
+## 📋 Beschreibung
 
 **Hinweis:** Momentan handelt es sich bei Adjuvant um einen Prototypen!
 
-## Dokumentation
-Alle wichtigen Dokumente wie FAQs, Press Release, Benutzerkarte, Storyboard, [Präsentation](https://files.stefan.zone/software-engineering/documents/product_presentation.pdf) usw. befinden sich in dem Ordner `/documents`.
+Der Prototyp läuft auf der Plattform [Amazon Alexa](https://developer.amazon.com/alexa) und anstehende Termine des Patienten werden in der Cloud gespeichert. Dafür wird die NoSQL-Datenbank [AWS DynamoDB](https://www.aws.com/dynamodb) verwendet und der Programmcode (Java) wird in [AWS Lambda](https://www.aws.com/lambda) ausgeführt.
 
-## Lust Adjuvant selbst zu nutzen?
-Um Adjuvant selbst nutzen zu können wird ein Alexa Amazon Developer Account benötigt. Da sich das Projekt in der *development* Phase befindet, wird außerdem eine Einladung für das Projekt von einem Projektmitglied benötigt.
+Darüber hinaus wurden die [GeoCode Routing API](https://geocode.dev.stefan.zone/github) und ein zugehöriges [Java SDK](https://geocode.dev.stefan.zone/java/sdk) entwickelt, das ebenfalls als Package im [Maven Central Repository](https://search.maven.org/artifact/zone.stefan.dev/geocode/1.0.1/jar) verfügbar ist. Es bietet einen einfachen Zugriff auf die berechneten Routendaten in Java, die von der REST-API zurückgegeben werden.
 
-In dem Ordner `/config` befinden sich der Manifest des Skills und die schematische Definition des Interaktion-Modells. Mit diesen zwei Dateien könnte man diesen Skill jederzeit neu aufsetzen oder einen neuen gleichen Skill erstellen.
+Die Entwicklung erfolgte agil mit Scrum, so dass das Feedback der Betroffenen und ihrer Angehörigen inkrementell eingearbeitet werden konnte. Um Werkzeuge wie [JUnit](https://junit.org/), [Jacoco](https://www.jacoco.org/jacoco/) und [Checkstyle](https://checkstyle.org/) vollständig automatisiert ausführen zu können, wurde zudem eine [Gitlab CI/CD](https://docs.gitlab.com/ee/ci/) Pipeline ([`.gitlab-ci.yml`](../../blob/main/.gitlab-ci.yml)) konfiguriert.
 
-## Fehler gefunden? 👷‍
+## ⚙️ Konfiguration
 
-Vielen Dank für Ihre Nachricht! Bitte füllen Sie einen [Fehlerbericht](https://gitlab.lrz.de/stefankuehnel/sweng1-20-team11-adjuvant/-/issues/new) aus. Wir werden uns dann so schnell wie möglich um eine Lösung bemühen.
+Um Adjuvant verwenden zu können, wird ein [Entwickler Konto](https://developer.amazon.com/alexa/console/signin) für Amazon Alexa benötigt. Befindet sich das Projekt in der `development` Phase, so muss jedes Projektmitglied als Entwickler eingeladen werden.
 
-## Klonen des Projekts
+Zur Konfiguration können die Dateien im Ordner ([`.alexa`](../../blob/main/.alexa)) verwendet werden. Sie ermöglichen jederzeit Adjuvant von Grund auf neu aufzusetzen.
 
-```bash
-git clone https://gitlab.lrz.de/stefankuehnel/sweng1-20-team11-adjuvant.git
-```
+## 🔨 Technologie
 
-## Lizenz
-Dieses Projekt ist unter der MIT License lizensiert. Weitere Informationen finden Sie [hier](https://gitlab.lrz.de/stefankuehnel/sweng1-20-team11-adjuvant/-/blob/master/LICENSE).
+Bei der Entwicklung wurden folgende Technologien und Werkzeuge eingesetzt.
 
-## Mitwirkende
+- **Code**: [Java](https://www.java.com)
+- **Datenbank**: [AWS DynamoDB](https://www.aws.com/dynamodb)
+- **Rechner**: [AWS Lambda](https://www.aws.com/lambda)
+- **CI/CD**: [Gitlab CI](https://docs.gitlab.com/ee/ci/)
 
-Team: Anonymous Student, Anonymous Student, [Stefan Kühnel](https://9bn.de/sk), Anonymous Student und Anonymous Student
+## 👷‍ Fehler gefunden?
+
+Vielen Dank für Ihre Nachricht! Bitte füllen Sie einen [Fehlerbericht](../../issues/new?assignees=&labels=&template=bug_report.yaml&title=) aus. Wir werden uns dann so schnell wie möglich um eine Lösung bemühen.
+
+## Urheberrecht
+
+&copy; 2020 – 2021 Projekt Adjuvant, Alle Rechte vorbehalten.
