@@ -3,7 +3,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/projekt-adjuvant/adjuvant)](https://github.com/projekt-adjuvant/adjuvant/issues)
 [![GitHub license](https://img.shields.io/github/license/projekt-adjuvant/adjuvant)](https://github.com/projekt-adjuvant/adjuvant)
 
-Ein Amazon Alexa Plugin zur Unterstützung von Patienten mit Alzheimer bei der Einhaltung von Terminen und der Berechnung von Routen.
+Ein Amazon Alexa Plugin zur Unterstützung von Patienten mit Demenz bei der Einhaltung von Terminen und der Berechnung von Routen.
 
 ## Inhalte
 
