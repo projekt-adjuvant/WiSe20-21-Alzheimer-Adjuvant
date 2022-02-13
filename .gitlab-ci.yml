@@ -53,4 +53,4 @@ Deploy:
     - master
   script:
     - aws sts get-caller-identity
-    - aws lambda update-function-code --function-name "GreedingsFunc" --publish --zip-file "fileb://./target/Adjuvant-1.0.0.jar"
+    - aws lambda update-function-code --function-name "Adjuvant" --publish --zip-file "fileb://./target/Adjuvant-1.0.0.jar"
