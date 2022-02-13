@@ -10,6 +10,7 @@ Ein Amazon Alexa Plugin zur Unterstützung von Patienten mit Demenz bei der Einh
 - [**Beschreibung**](#-beschreibung)
 - [**Konfiguration**](#-konfiguration)
 - [**Technologie**](#-technologie)
+- [**Dokumente**](#-dokumente)
 - [**Fehler gefunden?**](#-fehler-gefunden)
 - [**Urheberrecht**](#urheberrecht)
 
@@ -37,6 +38,11 @@ Bei der Entwicklung wurden folgende Technologien und Werkzeuge eingesetzt.
 - **Datenbank**: [AWS DynamoDB](https://www.aws.com/dynamodb)
 - **Rechner**: [AWS Lambda](https://www.aws.com/lambda)
 - **CI/CD**: [Gitlab CI](https://docs.gitlab.com/ee/ci/)
+
+## 📃 Dokumente
+
+- **Pressemitteilung**: [Hier klicken](https://files.stefan.zone/software-engineering/documents/press_release.pdf)
+- **Projektpräsentation**: [Hier klicken](https://files.stefan.zone/software-engineering/documents/product_presentation.pdf)
 
 ## 👷‍ Fehler gefunden?
 
