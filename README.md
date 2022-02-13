@@ -44,4 +44,4 @@ Vielen Dank für Ihre Nachricht! Bitte füllen Sie einen [Fehlerbericht](../../i
 
 ## Urheberrecht
 
-&copy; 2020 – 2021 Projekt Adjuvant, Alle Rechte vorbehalten.
+&copy; 2020 – 2022 Projekt Adjuvant, Alle Rechte vorbehalten.
