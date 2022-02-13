@@ -8,7 +8,7 @@ Ein Amazon Alexa Plugin zur Unterstützung von Patienten mit Demenz bei der Einh
 ## Inhalte
 
 - [**Beschreibung**](#-beschreibung)
-- [**Konfiguration**](#-konfiguration)
+- [**Konfiguration**](#%EF%B8%8F-konfiguration)
 - [**Technologie**](#-technologie)
 - [**Dokumente**](#-dokumente)
 - [**Fehler gefunden?**](#-fehler-gefunden)
